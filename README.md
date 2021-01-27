@@ -1,6 +1,8 @@
 # Source Code Otserv
 
-### It needs to be on ubuntu 14.04 (Do not update)
+### This tutorial is for compiling and running on linux
+
+#### It needs to be on ubuntu 14.04 (Do not update)
 
 1. clone the repository
 ```bash
@@ -13,16 +15,17 @@ sudo apt-get install libreadline-dev lib32ncurses5-dev dh-autoconf libxml2-dev l
 cd lua-5.1.4/ && sudo make linux && make install && cd ..
 sudo ./autogen.sh && sudo ./configure --enalbe-mysql --enable-server-diag
 ```
-after runing without errors
 
-2. go to the file `Makefile` as root/sudo and search for the word `LDFLAGS =` and chage to `LDFLAGS = -pthread`
+#### After runing without errors
 
-3. above that in the line that has `LIBS =` in the end of the line add `-ldl` becoming `-lmysqlclient -llua -lcrypto -lcryptopp -lboost_filesystem -lboost_date_time -lboost_system -lboost_regex -lboost_thread -lz  -lxml2 -ldl`
+2. Go to the file `Makefile` as root/sudo and search for the word `LDFLAGS =` and chage to `LDFLAGS = -pthread`
 
-4. save the file with the changes an run `sudo ./build.sh`
+3. Above that in the line that has `LIBS =` in the end of the line add `-ldl` becoming `LIBS = -lmysqlclient -llua -lcrypto -lcryptopp -lboost_filesystem -lboost_date_time -lboost_system -lboost_regex -lboost_thread -lz  -lxml2 -ldl`
 
-the file server will be named has `theforgottenserver`.
+4. Save the file with the changes an run `sudo ./build.sh`
 
-you can move him to your otserv paste and then give `sudo chmod 777 theforgottenserver`.
+The file server will be named has `theforgottenserver`.
 
-to open the server just use `./theforgottenserver` without sudo.
+You can move him to your otserv paste and then give `sudo chmod 777 theforgottenserver`.
+
+To open the server just use `./theforgottenserver` without sudo.
