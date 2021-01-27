@@ -1,6 +1,8 @@
 # Source Code Otserv
 
-### This tutorial is for compiling and running on linux
+## This tutorial is for compiling and running on linux
+
+### Version 8.60 (trunk r3884)
 
 #### It needs to be on ubuntu 14.04 (Do not update)
 
