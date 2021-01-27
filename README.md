@@ -4,8 +4,8 @@
 
 1. clone the repository
 ```bash
-sudo apt-get install git
-git clone https://github.com/thefalked/source_code_otserv.git
+sudo apt-get install git &&
+git clone https://github.com/thefalked/source_code_otserv.git &&
 cd source_code_otserv/Source/ &&
 sudo chmod 777 autogen.sh &&
 sudo chmod 777 build.sh &&
