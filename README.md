@@ -14,8 +14,8 @@ cd source_code_otserv/Source/ &&
 sudo chmod 777 autogen.sh &&
 sudo chmod 777 build.sh &&
 sudo apt-get install libreadline-dev lib32ncurses5-dev dh-autoreconf libxml2-dev libboost-all-dev libcrypto++-dev libssl-dev libmysqlclient-dev &&
-cd lua-5.1.4/ && sudo make linux && make install && cd ..
-sudo ./autogen.sh && sudo ./configure --enalbe-mysql --enable-server-diag
+cd lua-5.1.4/ && sudo make linux && sudo make install && cd ..
+sudo ./autogen.sh && sudo ./configure --enable-mysql --enable-server-diag
 ```
 
 #### After runing without errors
