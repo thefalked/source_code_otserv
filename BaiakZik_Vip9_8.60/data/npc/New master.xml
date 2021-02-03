@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="New Master" script="data/npc/scripts/default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="134" head="39" body="114" legs="114" feet="85" addons="3"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_buyable" value="Master Spellbook,8904,100000000;Master Rod,7735,250000000;Real stamina,5468,10000000;Baiak Wand,8922,250000000;Master Sword,7407,250000000;Master axe,3962,250000000;Master Spear,3965,250000000;Master Club,7450,250000000;"/>
+	</parameters>
+1</npc>

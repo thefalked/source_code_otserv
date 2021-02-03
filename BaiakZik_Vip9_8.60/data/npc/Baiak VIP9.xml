@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Npc Vip9" script="data/npc/scripts/default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="134" head="39" body="114" legs="114" feet="85" addons="3"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_buyable" value="soft boots,6132,50000000;Baiak Helmet,6096,50000000;Baiak Armor,6095,50000000;Baiak Legs,5918,50000000;Baiak Boots,5462,50000000;"/>
+	</parameters>
+</npc>
